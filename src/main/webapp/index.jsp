@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>My Lab Appointment System</h1>
+<h1>My Lab Appointment System update</h1>
 </body>
 </html>
