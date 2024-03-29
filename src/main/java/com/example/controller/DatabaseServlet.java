@@ -164,7 +164,7 @@ public class DatabaseServlet extends HttpServlet {
         	            // Redirect to a success page after insertion
         	            response.sendRedirect(request.getContextPath() + "/app/lab_receptionist_dashboard");
 //        	            TODO : uncomment before submit
-//        	            sendEmail(request, response, firstName, lastName, "Patient", generatedId, uniquePassword, email, "Using this app, you can view your appointments, medical test results. And you can download medical reports as well.");
+        	            sendEmail(request, response, firstName, lastName, "Patient", generatedId, uniquePassword, email, "Using this app, you can view your appointments, medical test results. And you can download medical reports as well.");
         	        } else {
         	            System.out.println("Failed to retrieve inserted record ID");
         	        }
@@ -227,7 +227,7 @@ public class DatabaseServlet extends HttpServlet {
             	            // Redirect to a success page after insertion
             	            response.sendRedirect(request.getContextPath() + "/app/lab_receptionist_dashboard");
 //            	            TODO : uncomment before submit
-//            	            sendEmail(request, response, firstName, lastName, "Doctor", generatedId, uniquePassword, email, "In this system you can view assigned appointments, and you are responsible to direct patient right way giving correct feedback. Enjoy your job!");
+            	            sendEmail(request, response, firstName, lastName, "Doctor", generatedId, uniquePassword, email, "In this system you can view assigned appointments, and you are responsible to direct patient right way giving correct feedback. Enjoy your job!");
             	        } else {
             	            System.out.println("Failed to retrieve inserted record ID");
             	        }
@@ -293,7 +293,7 @@ public class DatabaseServlet extends HttpServlet {
             	            // Redirect to a success page after insertion
             	            response.sendRedirect(request.getContextPath() + "/app/lab_receptionist_dashboard");
 //            	            TODO : uncomment before submit
-//            	            sendEmail(request, response, firstName, lastName, "Lab Technician", generatedId, uniquePassword, email, "You can view assigned appointments, you are responsible for adding valid test results. Enjoy your job!");
+            	            sendEmail(request, response, firstName, lastName, "Lab Technician", generatedId, uniquePassword, email, "You can view assigned appointments, you are responsible for adding valid test results. Enjoy your job!");
             	        } else {
             	            System.out.println("Failed to retrieve inserted record ID");
             	        }
@@ -788,11 +788,11 @@ public class DatabaseServlet extends HttpServlet {
     	                
     	                if ("paid".equals(payment)) {
 //    	                	TODO : uncomment before submit
-//    	                	sendEmailForAppointmentsPaid(request, response, firstName, Integer.parseInt(patientUsername), generatedId, yourNumber, email, checkupDate, checkupTime, appointmentType, cost);
+    	                	sendEmailForAppointmentsPaid(request, response, firstName, Integer.parseInt(patientUsername), generatedId, yourNumber, email, checkupDate, checkupTime, appointmentType, cost);
     	                    
     	                } else {
 //    	                	TODO : uncomment before submit
-//    	                	sendEmailForAppointmentsUnpaid(request, response, firstName, Integer.parseInt(patientUsername), generatedId, yourNumber, email, checkupDate, checkupTime);
+    	                	sendEmailForAppointmentsUnpaid(request, response, firstName, Integer.parseInt(patientUsername), generatedId, yourNumber, email, checkupDate, checkupTime);
     	                }
     	                
     	                
